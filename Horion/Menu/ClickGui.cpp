@@ -38,8 +38,8 @@ static constexpr float paddingRight = 13.5f;
 static constexpr float crossSize = textHeight / 2.f;
 static constexpr float crossWidth = 0.3f;
 static constexpr float backgroundAlpha = 1;
-static const MC_Color selectedModuleColor = MC_Color(200, 30, 201);
-static const MC_Color moduleColor = MC_Color(255, 30, 99);
+static const MC_Color selectedModuleColor = MC_Color(165, 25, 104);
+static const MC_Color moduleColor = MC_Color(231, 54, 35);
 
 float currentYOffset = 0;
 float currentXOffset = 0;
@@ -109,9 +109,9 @@ void ClickGui::renderTooltip(std::string* text) {
 		currentTooltipPos.y - 2.f,
 		currentTooltipPos.x + (textPadding * 2) + textWidth + 2.f,
 		currentTooltipPos.y + textHeight + 2.f);
-	DrawUtils::fillRectangle(rectPos, MC_Color(13, 29, 48), 1.0f);
-	DrawUtils::drawRectangle(rectPos, MC_Color(255, 255, 255), 1.f, 0.5f);
-	DrawUtils::drawText(textPos, text, MC_Color(255, 255, 255), textSize);
+	DrawUtils::fillRectangle(rectPos, MC_Color(124, 54, 321), 1.0f);
+	DrawUtils::drawRectangle(rectPos, MC_Color(312, 213, 123), 1.f, 0.5f);
+	DrawUtils::drawText(textPos, text, MC_Color(431, 123, 164), textSize);
 }
 
 void ClickGui::renderCategory(Category category) {
